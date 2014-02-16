@@ -122,6 +122,8 @@ Array
         $array_values_rates[$type] = $currencyRate->Rate * $array_values_rates["USD"];
       }
 
+      // sort keys alphabetically
+      ksort($array_values_rates);
       $array_values["values"] = $array_values_rates;
       
       return $array_values;
